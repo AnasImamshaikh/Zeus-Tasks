@@ -1,0 +1,34 @@
+body{
+    background: #FFFFCC;
+    font-family: "Calibri",sans-serif;
+}
+h1{
+    background: #990000;
+    text-align: center;
+    color: #FFFFCC;
+    border-bottom: solid  #CC0000 20px;
+    letter-spacing: 10px;
+    font-family: "Pragmatica", Paragraph, sans-serif;
+    font-style: italic;
+}
+h2{
+    background: #009900;
+    color: white;
+    padding-left: 2%;
+}
+h3{
+    color: gray;
+}
+.table{
+    background-color: #CCCCCC;
+}
+.List{
+    font-style: italic;
+    color: #CC0000;
+}
+img{
+    background: white;
+    border: dotted gray 3px;
+    width: 200px;
+    height: 100px;
+}

@@ -1,0 +1,28 @@
+a. What is HTML? Give basic structure of the HTML page.
+-HTML, or HyperText Markup Language, is the standard language used to create and structure content on the World Wide Web. It provides a set of markup tags that are used to define the structure and elements of a web page. Here's a basic structure of an HTML page:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+</head>
+<body>
+    <!-- Content goes here -->
+</body>
+</html>
+
+b. Difference between inline and block level element.
+-In short, the main difference between inline and block-level elements in HTML is how they behave within the layout of a web page:
+
+1. **Inline Elements:**
+   - Inline elements do not start on a new line; they flow within the text content.
+   - They only take up as much width as necessary and do not cause line breaks.
+   - Examples: `<span>`, `<a>`, `<strong>`, `<em>`, `<img>`
+
+2. **Block-Level Elements:**
+   - Block-level elements start on a new line and create a new "block" or container for content.
+   - They take up the full available width by default and cause line breaks before and after.
+   - Examples: `<div>`, `<p>`, `<h1>`, `<ul>`, `<li>`
+
+In essence, inline elements are used for small elements that should be integrated within text, while block-level elements are used to structure and separate larger sections of content on a web page. The choice between using inline or block-level elements depends on how you want your content to be visually organized and presented.
