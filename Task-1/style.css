@@ -1,3 +1,9 @@
+
+.uno{
+    display: flex;
+    width: 457px;
+    height: 138px;
+}
 .username{
     font-weight: bold;
     font-family:"Roboto";
@@ -7,7 +13,11 @@
 }
 .tweet{
     font-family:"Roboto";
+    text-align: center;
     font-size:20px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+    width: 319px;
     font-weight: normal;
     text-emphasis-color: #000000;
     table-layout: auto;
@@ -16,6 +26,7 @@
     width: 130px;
     height: 130px;
     display: inline;
+    margin:4px ;
     
 }
 
@@ -34,17 +45,33 @@
     height: 20px;
     display: inline;
 }
-.count{
-    margin-left: 14px;
-    margin-right: 24px;
+.c_count{
+    margin: 0px 24px 0px 14px;
+    display: inline;
+    font-family:"Roboto";
+    font-size: 15px;
+}
+.t_count{
+    margin: 0px 24px 0px 14px;
+    display: inline;
+    font-family:"Roboto";
+    font-size: 15px;
+}
+.l_count{
+    margin: 0px 24px 0px 14px;
     display: inline;
     font-family:"Roboto";
     font-size: 15px;
 }
 .content{
     display: flexbox;
-    margin-left: 14px;
+    height: 130px;
+
 }
-.uno{
-    display: flex;
+.icon{
+    display:flex;
+    justify-content: center;
+    width: 319px;
+    height: 20px;
+
 }
