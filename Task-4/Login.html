@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="header">
+        <img class="header-background" src="Quantum Logo.svg" alt="logo">
+    </div>
+    <div class="login">
+        <form action="login.php" method="post">
+            <div class="login-box">
+                <div class="login-top">
+                    <a href=""><img class="back-logo" src="assets/icons/back.svg" alt="back-logo"></a>
+                    <p class="login-txt">Log in with Quantum</p></div>
+                <div class="radio-btn">
+                    <input type="radio" class="district">District
+                    <input type="radio" class="school">Independent school
+                </div>
+                <div>
+                    <p>State*</p>
+                    <input type="dropdown" class="dropdown" placeholder="Alabama" name="district" value="">
+                    <p>District*</p>
+                    <input type="dropdown" class="dropdown" placeholder="Alabama School District" name="district"
+                        value="">
+
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Username/Email ID*" name="username" value="">
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password*" name="password" value="">
+                </div>
+                <input class="btn" type="submit" name="login" value="Sign in">
+                <p>Don't have an account? <a href="register.php">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <img class="footer-logo" src="assets/icons/logo used in footer.svg" alt="logo">
+        <div class="dif"></div>
+        <div class="footer-txt">Copyright © 2020-2021</div>
+        <div class="footer-txt">Zeus Systems Pvt. Ltd.</div>
+        <div class="footer-txt">All rights reserved.</div>
+</footer>
+</body>
+
+</html>
