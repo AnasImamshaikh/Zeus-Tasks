@@ -5,12 +5,6 @@ html, body {
   opacity: 1;
 }
 
-.header > .header-background {
-  width: 134px;
-  height: 36px;
-  margin: 2px 10px 2px 15px;
-}
-
 .header {
   border-bottom: 2px solid #31b9e4;
   background-image: url(assets/header\ pattern\ image.png), linear-gradient(to right, #4f505e, #484956);
@@ -18,6 +12,11 @@ html, body {
   background-size: 100% 56px;
   background-repeat: no-repeat;
   filter: brightness(100%);
+}
+.header > .header-background {
+  width: 134px;
+  height: 36px;
+  margin: 2px 10px 2px 15px;
 }
 
 /* -----------login css----------------- */
@@ -35,24 +34,21 @@ html, body {
   align-items: center;
   justify-content: center;
   border-top: 4px solid #3ac7ec;
+  /* --------footer css---------------- */
 }
-
 .login-box {
   width: 424px;
   height: 350px;
   position: relative;
   top: -80px;
 }
-
 .login-top {
   display: flex;
   align-items: center;
 }
-
-.back-logo {
+.login-top .back-logo {
   align-items: flex-start;
 }
-
 .login-txt {
   position: relative;
   margin: 15px auto 30px;
@@ -65,13 +61,11 @@ html, body {
   letter-spacing: 0px;
   opacity: 100%;
 }
-
-.radio-btn {
+.login .radio-btn {
   display: flex;
   margin-left: 20px;
 }
-
-.radio-label {
+.login .radio-btn .radio-label {
   font-family: "Quicksand", sans-serif;
   font-weight: medium;
   display: flex;
@@ -79,45 +73,37 @@ html, body {
   margin-right: 20px;
   cursor: pointer;
 }
-
-.radio-input {
+.login .radio-btn .radio-input {
   display: none;
 }
-
-.radio-img {
+.login .radio-btn .radio-img {
   width: 16px;
   height: 16px;
   margin-right: 5px;
 }
-
-.radio-input:checked + .radio-on {
+.login .radio-btn .radio-input:checked + .radio-on {
   display: inline;
 }
-
-.radio-input:checked + .radio-off {
+.login .radio-btn .radio-input:checked + .radio-off {
   display: none;
 }
-
-.dropdown-container {
+.login .dropdown-container {
   margin: 20px;
 }
-
-.dropdown-container > label {
+.login .dropdown-container > label {
   font-size: 12px;
   color: #666666;
   margin-right: 10px;
   font-family: "Quicksand", sans-serif;
 }
-
-.dropdown {
+.login .dropdown-container .dropdown {
   flex: 1;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
   padding: 2px 0;
 }
-
-.dropdown-select {
+.login .dropdown-container .dropdown .dropdown-select {
   font-family: Quicksand, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -130,46 +116,33 @@ html, body {
   -webkit-appearance: none;
   flex: 1;
 }
-
-.dropdown-icon {
+.login .dropdown-container .dropdown .dropdown-icon {
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-
-.textbox {
+.login .textbox {
   position: relative;
   margin-bottom: 10px;
 }
-
-.textbox input[type=text] {
+.login .textbox input[type=text],
+.login .textbox input[type=password] {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   color: #666666;
   width: 380px;
-  height: 25px;
   border: none;
   margin: 20px 20px 0px 20px;
   border-bottom: 1px solid #ccc;
   outline: none;
 }
-
-.textbox input[type=password] {
-  font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  color: #666666;
-  width: 380px;
-  border: none;
+.login .textbox input[type=password] {
   margin: 15px 5px 0px 20px;
-  border-bottom: 1px solid #ccc;
-  outline: none;
 }
-
-.forgot-username {
+.login .forgot-username {
   text-align: right;
 }
-
-.forgot-password-txt {
+.login .forgot-password-txt {
   margin: 0px;
   text-align: right;
   font-family: "Quicksand", sans-serif;
@@ -178,12 +151,10 @@ html, body {
   width: 384px;
   color: #1F7A54;
 }
-
-.forgot-password-txt > p {
+.login .forgot-password-txt > p {
   margin: 0px;
 }
-
-.remember-me {
+.login .remember-me {
   display: flex;
   margin: 20px 0px 0px 20px;
   font-family: "Quicksand", sans-serif;
@@ -193,17 +164,14 @@ html, body {
   color: #222222;
   accent-color: #1F7A54;
 }
-
-.remember-me > input {
+.login .remember-me > input {
   align-items: center;
 }
-
-.login-end {
+.login .login-end {
   display: flex;
   margin-top: 20px;
 }
-
-.login-btn {
+.login .login-btn {
   margin: auto;
   width: 216px;
   height: 40px;
@@ -219,8 +187,7 @@ html, body {
   border: none;
   outline: none;
 }
-
-.about {
+.login .about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,16 +201,13 @@ html, body {
   bottom: -55%;
   right: 30%;
 }
-
-.dif1 {
+.login .dif1 {
   width: 0px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1215686275);
   margin: 10px;
 }
-
-/* --------footer css---------------- */
-.footer {
+.login .footer {
   display: flex;
   width: 100%;
   height: 40px;
@@ -254,13 +218,11 @@ html, body {
   bottom: 0;
   left: 0;
 }
-
-.footer-logo {
+.login .footer-logo {
   width: 90px;
   height: 30px;
 }
-
-.footer-txt {
+.login .footer-txt {
   justify-content: center;
   margin: 5px 0px 5px 15px;
   font-family: Quicksand, sans-serif;
@@ -268,13 +230,9 @@ html, body {
   letter-spacing: 0px;
   color: #616161;
   opacity: 1;
-}
-
-.footer > div:nth-child(4) {
   font-weight: bold;
 }
-
-.dif {
+.login .dif {
   width: 0px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1215686275);
