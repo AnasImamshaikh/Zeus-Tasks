@@ -55,30 +55,7 @@ html, body {
 }
 
 .profile {
-  margin-right: 25px;
-}
-
-.a-badge {
-  position: absolute;
-  top: 9px;
-  padding: 1px 7px;
-  border-radius: 50%;
-  font-size: 12px;
-  background-color: rgb(40, 129, 255);
-  color: white;
-}
-
-.a-badge :nth-child(2){
-  background-color: white;
-}
-.badge {
-  position: absolute;
-  top: 9px;
-  padding: 1px 5px;
-  border-radius: 50%;
-  font-size: 12px;
-  background-color: rgb(40, 129, 255);
-  color: white;
+  margin-right: 10px;
 }
 
 .hamburger {
@@ -201,7 +178,6 @@ h5 {
 }
 
 .head > .img {
-  margin-top: 30px;
   margin-left: 10px;
   width: 35px;
   height: 35px;
@@ -234,26 +210,6 @@ strong {
   background-position-y: -2px;
   outline: none;
 }
-.text-4 > select {
-  border: none;
-  background: none;
-  width: 360px;
-  margin: 15px 0px 15px 0px;
-  padding-bottom: 3px;
-  border-bottom: 1px solid grey;
-  font-size: 18px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-  background-image: url(images/arrow-down.svg);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: -2px;
-  outline: none;
-}
-.text-4{
-  margin-bottom: 36px;
-}
 
 p > span {
   border-left: 1px solid rgba(128, 128, 128, 0.388);
@@ -272,7 +228,6 @@ p > span {
 }
 
 .img-effect {
-  margin-top: 30px;
   margin-left: 10px;
   width: 25px;
   height: 25px;

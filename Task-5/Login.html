@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="header">
+        <img class="header-background" src="Quantum Logo.svg" alt="logo">
+    </div>
+    <div class="login">
+        <form action="login.php" method="post">
+            <div class="login-box">
+                <div class="login-top">
+                    <a href=""><img class="back-logo" src="assets/icons/back.svg" alt="back-logo"></a>
+                    <p class="login-txt">Log in with Quantum</p></div>
+                    <div class="radio-btn">
+                        <label class="radio-label">
+                          <input type="radio" name="radio-option" class="radio-input" >
+                          <img src="assets/icons/radio-button-on.svg" alt="Radio On" class="radio-on">
+                          District
+                        </label>
+                        <label class="radio-label">
+                          <input type="radio" name="radio-option" class="radio-input" >
+                          <img src="assets/icons/radio-button-off.svg" alt="Radio Off" class="radio-off">
+                          Independent school
+                        </label>
+                      </div>
+                <div class="dropdown-container">
+                    <label for="state" class="label">State*</label>
+                    <div class="dropdown">
+                      <select id="state" class="dropdown-select">
+                        <option value="" disabled selected>Alabama</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <!-- Add more states here -->
+                      </select>
+                      <img src="assets/icons/arrow-down.svg" alt="Dropdown Icon" class="dropdown-icon">
+                    </div>
+                  </div>
+                  <div class="dropdown-container">
+                    <label for="state" class="label">District*</label>
+                    <div class="dropdown">
+                      <select id="state" class="dropdown-select">
+                        <option value="" disabled selected>Alabama School District</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <!-- Add more states here -->
+                      </select>
+                      <img src="assets/icons/arrow-down.svg" alt="Dropdown Icon" class="dropdown-icon">
+                    </div>
+                  </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Username/Email ID*" name="username" value="">
+                </div>
+                <div class="forgot-username">
+                    <a href=""><p class="forgot-password-txt">FORGOT USERNAME?</p></a>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password*" name="password" value="">
+                </div>
+                <div class="forgot-password">
+                    <a href=""><p class="forgot-password-txt">FORGOT PASSWORD?</p></a>
+                </div>
+                <div class="login-bottom">
+                <div class="remember-me">
+                    <input type="checkbox" class="Remember-me-btn" value="checked">Remember Me
+                </div>
+                <div class="login-end">
+                    <input type="submit" class="login-btn" value="LOG IN">
+            </div>
+        </form>
+        
+    </div>
+    <div class="about">
+        <p>About</p>
+        <div class="dif1"></div>
+        <p>Contact Us</p>
+    </div>
+    <footer class="footer">
+        <img class="footer-logo" src="assets/icons/logo used in footer.svg" alt="logo">
+        <div class="dif"></div>
+        <div class="footer-txt">Copyright © 2020-2021</div>
+        <div class="footer-txt">Zeus Systems Pvt. Ltd.</div>
+        <div class="footer-txt">All rights reserved.</div>
+</footer>
+</body>
+
+</html>
