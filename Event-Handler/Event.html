@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Example</title>
+    <style>
+        /* CSS styles for the button and message */
+        #myButton {
+            height: 50px;
+            width: 200px;
+            background-color: #007bff; 
+            color: #fff;
+            text-shadow: #ccc 1px 1px 1px;
+            padding: 10px 20px; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; 
+            font-size: 19px;
+            display:block;
+        }
+
+        #myButton:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        #message {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+
+        #beforeClickImage,
+        #afterClickImage {
+            width: 350px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Handling Example</h1>
+    <button id="myButton">Click Me!</button>
+
+    <!-- Image displayed before the button click -->
+    <img id="beforeClickImage" src="before.jpg" alt="Before Click" />
+
+
+    <p id="outputText">Button not clicked yet.</p>
+
+    <!-- Image displayed after the button click -->
+    <div id="message">
+        <img id="afterClickImage" src="after.jpg" alt="After Click" />
+        <p>You just clicked me!</p>
+    </div>
+
+    <script>
+        const button = document.getElementById('myButton');
+        const outputText = document.getElementById('outputText');
+        const messageContainer = document.getElementById('message');
+
+        function buttonClickHandler() {
+            outputText.textContent = 'Button clicked!';
+            button.textContent = 'Clicked!';
+            button.style.backgroundColor = 'green';
+            button.disabled = true;
+
+            // Hide the before-click image
+            const beforeClickImage = document.getElementById('beforeClickImage');
+            beforeClickImage.style.display = 'none';
+
+            // Show the message and after-click image
+            messageContainer.style.display = 'block';
+        }
+
+        button.addEventListener('click', buttonClickHandler);
+    </script>
+</body>
+</html>
